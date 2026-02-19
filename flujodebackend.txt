@@ -1,0 +1,47 @@
+Petición del cliente (React)
+
+El usuario hace una acción en la interfaz (ejemplo: login).
+
+React envía una petición HTTP al backend (ejemplo: POST /login).
+
+Recepción en el servidor (Node.js + Express)
+
+Express recibe la petición en la ruta correspondiente.
+
+Se procesan los datos enviados (correo, clave, etc.).
+
+Validación de datos
+
+El backend revisa que los datos tengan el formato correcto.
+
+Ejemplo: que el correo sea válido, que la clave no esté vacía.
+
+Acceso a la base de datos (MongoDB)
+
+El backend consulta MongoDB para verificar si el usuario existe.
+
+Si es un registro nuevo, guarda los datos en la base.
+
+Si es login, compara la clave encriptada con la ingresada.
+
+Autenticación con JWT
+
+Si los datos son correctos, el backend genera un token JWT.
+
+Ese token se envía al cliente (React).
+
+El cliente lo guarda y lo manda en cada petición futura.
+
+Middleware de seguridad
+
+En rutas protegidas, el backend revisa el token JWT.
+
+Si es válido → acceso permitido.
+
+Si no → acceso denegado.
+
+Respuesta al cliente
+
+El backend devuelve un JSON con el resultado (ejemplo: {mensaje: "Login exitoso", token: "..."}).
+
+React recibe la respuesta y actualiza la interfaz.
