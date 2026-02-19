@@ -5,7 +5,9 @@ function App() {
   return (
     <div>
       <h1>Annie</h1>
+      // Login base
       <Login />
+      // Registro base
       <Registro />
     </div>
   );
