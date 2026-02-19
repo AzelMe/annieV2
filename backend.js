@@ -1,6 +1,6 @@
 // Importar dependencias necesarias
 const express = require('express');       // Framework para crear el servidor y manejar rutas
-const mongoose = require('mongoose');     // Librería para conectarse y trabajar con MongoDB
+const mongoose = require('mongoose');     // Librería para conectarse y trabajar con MongoDB ---SE VA A CAMBIAR POR NODE--
 const bcrypt = require('bcrypt');         // Para encriptar y comparar contraseñas
 const jwt = require('jsonwebtoken');      // Para generar y validar tokens JWT
 
