@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cyber UTSC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="annie-header">
+        <div class="annie-logo">
+            <img src="IMAGENES/LOGO.png" alt="Logo Annie" />
+            <span class="annie-logo-text">Annie</span>
+        </div>
+        <nav class="annie-nav">
+            <a href="index.html">Home</a>
+            <a href="stores.html">Regresar a Tiendas</a>
+        </nav>
+    </header>
+
+    <main class="cyber-content">
+        <section class="hero">
+            <h1>Cyber UTSC</h1>
+            <p>Servicios de impresión, copias, renta de computadoras y papelería.</p>
+        </section>
+
+        <!-- Servicios -->
+        <section class="servicios" id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <img src="IMAGENES/IMPRESIONES.jpg" alt="Impresiones" />
+                    <h3>Impresiones</h3>
+                    <ul class="precios">
+                        <li>B/N: $2.00 por página</li>
+                        <li>Color: $5.00 por página</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="IMAGENES/FOTOCOPIA.jpg" alt="Fotocopias" />
+                    <h3>Fotocopias</h3>
+                    <ul class="precios">
+                        <li>B/N: $2.00 por copia</li>
+                        <li>Color: $5.00 por copia</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="IMAGENES/PAPELERIA.jpg" alt="Papelería" />
+                    <h3>Papelería</h3>
+                    <ul class="productos">
+                        <li>Cuadernos, plumas, folders</li>
+                        <li>Cartulinas y material escolar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios digitales -->
+        <section class="servicios-digitales" id="digitales">
+            <h2>Servicios Digitales</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <img src="IMAGENES/CYBER1.jpeg" alt="Renta de PC" />
+                    <h3>Renta de Computadora</h3>
+                    <p class="precio">$15 / hora</p>
+                    <ul class="detalles">
+                        <li>Internet rápido</li>
+                        <li>Office y software básico</li>
+                        <li>Impresión y escaneo disponibles</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="IMAGENES/ESCANEO.jpg" alt="Escaneo" />
+                    <h3>Escaneo y Digitalización</h3>
+                    <p class="precio">$5 por trabajo</p>
+                    <ul class="detalles">
+                        <li>PDF multi-página</li>
+                        <li>Recorte básico y optimización</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pedidos / Órdenes -->
+        <section class="pedidos" id="pedidos">
+            <h2>Realiza tu pedido</h2>
+            <form id="pedido-form" class="pedido-form">
+                <input type="text" name="nombre" placeholder="Nombre completo" required />
+                <input type="email" name="email" placeholder="Correo electrónico" required />
+
+                <label for="servicio">Tipo de servicio</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona...</option>
+                    <option value="impresion-bn">Impresión B/N</option>
+                    <option value="impresion-color">Impresión Color</option>
+                    <option value="copia-bn">Fotocopia B/N</option>
+                    <option value="copia-color">Fotocopia Color</option>
+                    <option value="renta-pc">Renta de PC</option>
+                    <option value="escaneo">Escaneo</option>
+                </select>
+
+                <label for="cantidad">Cantidad (páginas / horas)</label>
+                <input id="cantidad" name="cantidad" type="number" min="1" value="1" required />
+
+                <textarea name="detalles" placeholder="Detalles del pedido (archivo, formato, indicaciones)"></textarea>
+
+                <div class="precio-calculado" aria-live="polite">
+                    <span id="precio-total">Total: $0.00</span>
+                </div>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+            <p class="nota">Nota: después de enviar tu pedido te contactaremos para confirmar el precio y tiempo de entrega.</p>
+        </section>
+
+        <!-- Galería -->
+        <section class="galeria" id="galeria">
+            <h2>Galería</h2>
+            <div class="gallery-grid">
+                <img src="IMAGENES/CYBER3.jpeg" alt="Interior del cyber" />
+                <img src="IMAGENES/CYBER2.jpeg" alt="Área de impresiones" />
+                <img src="IMAGENES/CYBER5.jpeg" alt="Estaciones de trabajo" />
+            </div>
+        </section>
+
+        <!-- Comentarios breves -->
+        <section class="comentarios" id="comentarios">
+            <h2>Comentarios</h2>
+            <div class="reviews">
+                <div class="review">
+                    <img src="IMAGENES/ICONO.png" alt="Usuario">
+                    <p class="comment">"Impresiones rápidas y buen precio."</p>
+                    <p class="author">- Mariana</p>
+                    <div class="estrellas">★★★★★</div>
+                </div>
+                <div class="review">
+                    <img src="IMAGENES/ICONO.png" alt="Usuario">
+                    <p class="comment">"Buen lugar pero esta un poco caro y que porfavor consigan mejores PCs"</p>
+                    <p class="author">- Luis</p>
+                    <div class="estrellas">★★★☆☆</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p>Horario: Lunes a Viernes 8:00 AM - 8:00 PM</p>
+            <p>WhatsApp: (81) 1234-5678</p>
+            <p>Email: cyber.utsc@contact.com</p>
+        </div>
+    </footer>
+
+    <script src="cyber.js"></script>
+</body>
+</html>

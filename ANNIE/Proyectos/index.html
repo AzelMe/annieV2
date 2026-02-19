@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANNIE - Descubre Negocios Locales</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="annie-header">
+    <div class="annie-logo">
+      <img src="IMAGENES/LOGO.png" alt="Logo Annie" />
+      <span class="annie-logo-text">Annie</span>
+    </div>
+    <nav class="annie-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="stores.html">Stores</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Buscador -->
+  <section class="annie-hero">
+    <h1>Descubre Negocios Locales de Manera sencilla</h1>
+    <form class="annie-search">
+      <input type="text" placeholder="Buscar..." />
+      <button type="submit">Buscar</button>
+    </form>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="beneficios" id="beneficios">
+    <h2>¿Por qué usar ANNIE?</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1029/1029183.png" alt="">
+        <h3>Mayor visibilidad</h3>
+        <p>Haz que más personas conozcan tu negocio en el mundo digital.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="">
+        <h3>Seguridad</h3>
+        <p>Tus datos y los de tus clientes están protegidos con ANNIE.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/535/535234.png" alt="">
+        <h3>Comunicación directa</h3>
+        <p>Conecta fácilmente con tus clientes y aumenta tus ventas.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="">
+        <h3>Crecimiento garantizado</h3>
+        <p>Mejora tu presencia y alcanza más oportunidades de negocio.</p>
+      </div>
+    </div>
+  </section>
+  <!-- SDKs de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <!-- Tu archivo de configuración de Firebase -->
+  <script src="firebase.js"></script>
+  <!-- Tus otros scripts JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>
