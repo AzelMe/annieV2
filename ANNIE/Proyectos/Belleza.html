@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza los Olvidados</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="annie-header">
+        <div class="annie-logo">
+            <img src="IMAGENES/LOGO.png" alt="Logo Annie">
+            <span class="annie-logo-text">Annie</span>
+        </div>
+        <nav class="annie-nav">
+            <a href="index.html">Home</a>
+            <a href="stores.html">Regresar a Tiendas</a>
+        </nav>
+    </header>
+
+    <main class="belleza-content">
+        <section class="hero">
+            <h1>Belleza los Olvidados</h1>
+            <p>Tu espacio de belleza y transformación</p>
+        </section>
+
+        <!-- Servicios -->
+        <section class="servicios" id="servicios">
+            <h2>Nuestros Servicios</h2>
+            
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <img src="IMAGENES/CORTE.jpg" alt="Cortes de Cabello">
+                    <h3>Cortes de Cabello</h3>
+                    <p class="precio">Desde $100</p>
+                    <ul class="detalles">
+                        <li>Corte dama</li>
+                        <li>Corte caballero</li>
+                        <li>Corte niños</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="IMAGENES/TINTE.jpg" alt="Tintes">
+                    <h3>Coloración</h3>
+                    <p class="precio">Desde $500</p>
+                    <ul class="detalles">
+                        <li>Tinte completo</li>
+                        <li>Mechas</li>
+                        <li>Balayage</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="IMAGENES/PEINADOS.jpg" alt="Peinados">
+                    <h3>Peinados</h3>
+                    <p class="precio">Desde $200</p>
+                    <ul class="detalles">
+                        <li>Eventos especiales</li>
+                        <li>Bodas</li>
+                        <li>XV años</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de trabajos -->
+        <section class="galeria" id="galeria">
+            <h2>Nuestros Trabajos</h2>
+            <div class="galeria-grid">
+                <img src="IMAGENES/TRABAJOS.jpg" alt="Trabajo 1">
+                <img src="IMAGENES/TRABAJO3.jpg" alt="Trabajo 2">
+                <img src="IMAGENES/TRABAJO4.jpg" alt="Trabajo 3">
+                <img src="IMAGENES/TRABAJO5.jpg" alt="Trabajo 4">
+            </div>
+        </section>
+
+        <!-- Citas -->
+        <section class="citas" id="citas">
+            <h2>Agenda tu Cita</h2>
+            <form class="cita-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <select required>
+                    <option value="">Selecciona el servicio</option>
+                    <option value="corte">Corte de cabello</option>
+                    <option value="tinte">Tinte</option>
+                    <option value="peinado">Peinado</option>
+                </select>
+                <input type="date" required>
+                <input type="time" required>
+                <button type="submit">Agendar Cita</button>
+            </form>
+        </section>
+
+        <!-- Reseñas -->
+        <section class="reseñas" id="reseñas">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="reseñas-container">
+                <div class="reseña">
+                    <img src="IMAGENES/ICONO.png" alt="Cliente">
+                    <p class="comentario">"Muy recomendable"</p>
+                    <p class="autor">- isabela</p>
+                    <div class="estrellas">★★★★★</div>
+                </div>
+                <div class="reseña">
+                    <img src="IMAGENES/ICONO.png" alt="Cliente">
+                    <p class="comentario">"Los mejores estilistas de la zona "</p>
+                    <p class="autor">- Maria</p>
+                    <div class="estrellas">★★★★★</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p>Horario: Martes a Sábado 9:00 AM - 7:00 PM</p>
+            <p>Tel: (81) 1234-5678</p>
+            <p>Email: bellezaolvidados@contact.com</p>
+        </div>
+    </footer>
+
+    <script src="belleza.js"></script>
+</body>
+</html>

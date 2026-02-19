@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | ANNIE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header-nuevo">
+    <div class="logo-annie">
+      <img src="IMAGENES/LOGO.png" alt="Logo Annie" />
+      <span class="logo-texto">Annie</span>
+    </div>
+    <nav class="nav-nuevo">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="stores.html">Stores</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <h1>Bienvenido a ANNIE</h1>
+      <p>Conecta tu negocio con más clientes.</p>
+      
+      <!-- Buscador -->
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Buscar negocios..." />
+          <button type="button" id="searchButton">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        
+        <!-- Resultados de búsqueda -->
+        <div class="search-results" id="searchResults">
+          <!-- Los resultados se mostrarán aquí -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Lista de negocios disponibles -->
+    <section class="negocios-disponibles">
+      <h2>Negocios Destacados</h2>
+      <div class="negocios-grid">
+        <div class="negocio-card" data-name="cafeteria">
+          <img src="CAFETERIA.png" alt="Cafetería UT" />
+          <h3>Cafetería UT</h3>
+          <p>Cafetería con productos orgánicos y económica.</p>
+          <a href="Cafeteria.html" class="btn-visitar">Visitar</a>
+        </div>
+        
+        <div class="negocio-card" data-name="belleza">
+          <img src="OLVIDADOS.png" alt="Belleza los Olvidados" />
+          <h3>Belleza los Olvidados</h3>
+          <p>Ponte bella o bello con los únicos de Nuevo León.</p>
+          <a href="Belleza.html" class="btn-visitar">Visitar</a>
+        </div>
+        
+        <div class="negocio-card" data-name="cyber">
+          <img src="CYBER.png" alt="Cyber UTSC" />
+          <h3>Cyber UTSC</h3>
+          <p>Copias e impresiones al momento.</p>
+          <a href="Cyber.html" class="btn-visitar">Visitar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="Buscador.js"></script>
+</body>
+</html>

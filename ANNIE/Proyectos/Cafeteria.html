@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria UT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="annie-header">
+        <div class="annie-logo">
+            <img src="IMAGENES/LOGO.png" alt="Logo Annie">
+            <span class="annie-logo-text">Annie</span>
+        </div>
+        <nav class="annie-nav">
+            <a href="index.html">Home</a>
+            <a href="stores.html">Regresar a Tiendas</a>
+        </nav>
+    </header>
+
+    <main class="cafeteria-content">
+        
+        <section class="hero">
+            <h1>Cafetería UT</h1>
+            <p>Tu espacio de comfort y sabor en la universidad</p>
+        </section>
+
+        <!-- Menú -->
+        <section class="menu" id="menu">
+            <h2>Nuestro Menú</h2>
+            
+            <div class="menu-category">
+                <h3>Bebidas</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="IMAGENES/CAFE.jpg" alt="Café Americano">
+                        <h4>Café Americano</h4>
+                        <p class="price">$30</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="IMAGENES/LIMONADA.jpg" alt="limonada">
+                        <h4>Limonada</h4>
+                        <p class="price">$30</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Alimentos</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="IMAGENES/BURRITOS.jpg" alt="BURRITOS">
+                        <h4>Burritos</h4>
+                        <p class="price">$50</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="IMAGENES/Hamburguesa.jpg" alt="Hamburguesa">
+                        <h4>Hamburguesa</h4>
+                        <p class="price">$55</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instalaciones -->
+        <section class="instalaciones" id="instalaciones">
+            <h2>Nuestras Instalaciones</h2>
+            <div class="gallery">
+                <img src="IMAGENES/INTERIOR.jpg" alt="Interior cafetería">
+                <img src="IMAGENES/AreaEstudios.jpeg" alt="Área de estudio">
+                <img src="IMAGENES/BarraCafe.jpg" alt="Barra de café">
+            </div>
+        </section>
+
+        <!-- Reservaciones -->
+        <section class="reservaciones" id="reservaciones">
+            <h2>Reserva tu espacio</h2>
+            <form class="reservation-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="date" required>
+                <input type="time" required>
+                <select required>
+                    <option value="">Número de personas</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="6">6 personas</option>
+                </select>
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <!-- Comentarios -->
+        <section class="comentarios" id="comentarios">
+            <h2>Comentarios de nuestros clientes</h2>
+            <div class="reviews">
+                <div class="review">
+                    <img src="IMAGENES/ICONO.png" alt="Usuario">
+                    <p class="comment">"Excelente servicio y el café es increíble"</p>
+                    <p class="author">- María García</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <img src="IMAGENES/ICONO.png" alt="Usuario">
+                    <p class="comment">"El mejor lugar para estudiar mientras tomas un café"</p>
+                    <p class="author">- Juan Pérez</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Horario: Lunes a Viernes 7:00 AM - 7:00 PM</p>
+        <p>Contacto: cafeteria@ut.edu.mx</p>
+    </footer>
+</body>
+</html>
