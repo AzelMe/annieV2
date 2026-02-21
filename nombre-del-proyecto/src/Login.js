@@ -1,14 +1,19 @@
-import { useState } from "react";   
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+   
 
     const handleSubmit = (e) => {
         e.preventDefault();
          //posible por apis
          console.log("Email:", email);
          console.log("Password:", password);
+
+         navigate("/registro");
     };
 
     
@@ -37,8 +42,7 @@ function Login() {
           />
         </div>
         <button type="submit">Ingresar</button> 
-        
-        <button type="button">Registrarse</button>
+        <button type="button" onClick={() => navigate("/registro")}>Registrarse</button>
       </form>
     </div>
   );

@@ -1,13 +1,15 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./Login";
 import Registro from "./Registro";
 
 function App() {
   return (
-    <div>
-      <h1>Annie</h1>
-      // Login base
-      <Login />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Login} />
+        <Route path="/registro" component={Registro} />
+      </Switch>
+    </Router>
   );
 }
 
