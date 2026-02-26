@@ -1,0 +1,72 @@
+1. TIPO DE LETRA QUE USAREMOS SERA HELVETICA, AQUI EL SCRIPT DE LA FUENTE, SOLO LOS TITULOS SERAN EN NEGRITAS
+CUALQUIER TEXTO QUE NO SEA TITULO NO SERA CON NEGRITAS
+/* styles.css */
+
+/* Fuente general para toda la app */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal; /* texto normal por defecto */
+}
+
+/* Títulos en negritas */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+
+2. EN EL LOGIN, CUANDO SE ENVIO ALGO PARA CONFIRMAR QUE SE ENVIO EL BOTON PUEDE CAMBIAR A VERDE, AQUI EL SCRIPT
+DEL CSS 
+/* Estilo normal del botón */
+button {
+  background-color: #007bff; /* azul inicial */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+Y EL DE REACT
+/* Estilo cuando ya se envió */
+button.enviado {
+  background-color: #28a745; /* verde éxito */
+  color: white;
+}
+
+import { useState } from "react";
+import "./styles.css";
+
+function BotonEnviar() {
+  const [enviado, setEnviado] = useState(false);
+
+  return (
+    <button
+      className={enviado ? "enviado" : ""}
+      onClick={() => setEnviado(true)}
+    >
+      {enviado ? "Enviado ✅" : "Enviar"}
+    </button>
+  );
+}
+
+export default BotonEnviar;
+
+3. EL COLOR DE LOS CONTAINERS SERAN DE COLOR BLANCO HUMO, AQUI EL SCRIPT DE CSS
+.container {
+  background-color: #F5F5F5; /* blanco humo */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+AQUI EL DE REACT SI SE VA A OCUPAR
+import "./styles.css";
+
+export default function Login() {
+  return (
+    <div className="container">
+      <h1>Pantalla de Login</h1>
+      <button>Enviar</button>
+    </div>
+  );
+}
+
+4.
