@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
+import Inicio from "./Inicio";
+
 
 import Login from "./Login/Login";
 import Registro from "./Registro/Registro";
@@ -10,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar/>
+            <Inicio />
       <Routes>
     { /*  <Route path="/" element={<Login />} /> 
         <Route path="/registro" element={<Registro />} /> */}
