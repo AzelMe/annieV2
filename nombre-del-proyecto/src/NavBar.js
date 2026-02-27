@@ -1,25 +1,21 @@
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-return (
+  return (
     <nav className="navbar">
-        <div className="navbar-logo" onClick={() => navigate("/")}>
-            ANNIE
-        </div>
-        <div className="navbar-links">
-            <button onClick={() => navigate("/registro")}>Inicio</button>
-            <button onClick={() => navigate("/registro")}>Sobre Nosotros</button>
-            <button onClick={() => navigate("/registro")}>Tiendas</button>
-            <button onClick={() => navigate("/registro")}>Contacto</button>
-        </div>
+      <div className="navbar-logo" onClick={() => navigate("/")}>
+        ANNIE
+      </div>
+      <div className="navbar-links">
+        <button onClick={() => navigate("/Inicio")}>Inicio</button>
+        <button onClick={() => navigate("/About")}>Sobre Nosotros</button>
+        <button onClick={() => navigate("/registro")}>Tiendas</button>
+        <button onClick={() => navigate("/registro")}>Contacto</button>
+      </div>
     </nav>
-        );
-
-
+  );
 }
-
-
 
 export default NavBar;
