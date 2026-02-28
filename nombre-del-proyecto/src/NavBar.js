@@ -11,8 +11,8 @@ function NavBar() {
       <div className="navbar-links">
         <button onClick={() => navigate("/Inicio")}>Inicio</button>
         <button onClick={() => navigate("/About")}>Sobre Nosotros</button>
-        <button onClick={() => navigate("/registro")}>Tiendas</button>
-        <button onClick={() => navigate("/registro")}>Contacto</button>
+        <button onClick={() => navigate("/Tiendas")}>Tiendas</button>
+        <button onClick={() => navigate("/Contactos")}>Contacto</button>
       </div>
     </nav>
   );

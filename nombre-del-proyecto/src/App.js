@@ -3,9 +3,11 @@ import NavBar from "./NavBar";
 //-------------Páginas----------------
 import Inicio from "./Inicio";
 import About from "./About";
+import Contactos from "./Contactos";
 //-------------Autenticación----------------
 import Login from "./Login/Login";
 import Registro from "./Registro/Registro";
+
 
 //-------------Core----------------
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contactos" element={<Contactos />} />
+
 
         {/*  <Route path="/" element={<Login />} /> 
         <Route path="/registro" element={<Registro />} /> */}
